@@ -3,10 +3,10 @@
 <! the % means evalutue and the %= means evalute and display >
 
 <ul>
-<% @articles.each do |article| %> 
-    <li>
-    <%= link_to article.title, article %>
-    </a>
-    </li>
-    <% end%>
+  <% @articles.each do |article| %>
+<a href="/articles/<%= article.id %>">
+     <%= article.title %>
+</a>
+  <% end %>
 </ul>
+
